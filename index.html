@@ -37,9 +37,36 @@
     </div>
 
 </div>
+<script>
+function nextPage(page) {
+    let pages = document.querySelectorAll(".card");
+    pages.forEach(p => p.classList.remove("active"));
 
-<!-- FIXED JS PATH -->
-<script src="special/script.js"></script>
+    let currentPage = document.getElementById("page" + page);
+    if (currentPage) {
+        currentPage.classList.add("active");
+    }
+
+    if (page === 3) {
+        let text = `Sukh,
+I don’t know where to begin... ❤️`;
+
+        let i = 0;
+        let el = document.getElementById("typewriter");
+        el.innerHTML = "";
+
+        function typeWriter() {
+            if (i < text.length) {
+                el.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 40);
+            }
+        }
+
+        typeWriter();
+    }
+}
+</script>
 
 </body>
 </html>
