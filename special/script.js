@@ -44,11 +44,4 @@ Yours`;
     }
   };
 
-});        if (page === 3) {
-            i = 0;
-            document.getElementById("typewriter").innerHTML = "";
-            setTimeout(typeWriter, 300);
-        }
-    };
-
 });
