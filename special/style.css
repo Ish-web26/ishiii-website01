@@ -1,15 +1,13 @@
-/* RESET */
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: 'Dancing Script', cursive;
+    background: #7EA7D6;
 }
 
-/* FULL SCREEN */
 .container {
     height: 100vh;
 }
 
-/* PAGES */
 .card {
     display: none;
     height: 100vh;
@@ -19,22 +17,76 @@ body {
     flex-direction: column;
 }
 
-/* ACTIVE PAGE */
 .card.active {
     display: flex;
 }
 
-#page1 
-body {
-    margin: 0;
-    font-family: Arial;
+/* ENVELOPE */
+.cover-img {
+    width: 200px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.container {
-    height: 100vh;
+.cover-img:hover {
+    transform: scale(1.05);
 }
 
-.card {
+/* PAGE 2 IMAGE */
+.page2-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* LETTER BOX */
+.letter-box {
+    background: #7EA7D6;
+    width: 90%;
+    max-width: 400px;
+    padding: 35px;
+    border-radius: 25px;
+    overflow-y: auto;
+}
+
+#typewriter {
+    white-space: pre-line;
+    line-height: 2;
+    font-size: 17px;
+    color: #00334d;
+}
+
+/* BUTTON */
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #5bb8ff;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* PAGE 3 BACKGROUND */
+#page3 {
+    background: url("special/cute.JPG") center/cover no-repeat;
+}
+
+/* TEXT ANIMATION */
+.intro-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #555;
+    animation: fade 2s infinite alternate;
+}
+
+@keyframes fade {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}.card {
     display: none;
     height: 100vh;
     justify-content: center;
