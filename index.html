@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love Website</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- PAGE 1 (ENVELOPE) -->
+    <div class="card active" id="page1">
+        <img src="envelope.jpg" class="cover-img" onclick="nextPage(2)">
+<p class="intro-text">Tap to open something special 💌</p>
+
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="card" id="page2">
+
+    <img src="SUKH.jpg" class="page2-img">
+
+    <button onclick="nextPage(3)">Go to Letter 💙</button>
+
+</div>
+
+    <!-- PAGE 3 -->
+   <div class="card" id="page3">
+
+    <div class="letter-box">
+        <p id="typewriter"></p>
+    </div>
+
+    <button onclick="nextPage(1)">Restart</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
